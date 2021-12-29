@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>X0</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <section class="controls">
+        <button id="new-file">New File</button>
+        <button id="open-file">Open File</button>
+        <button id="save" disabled>Save</button>
+        <button id="revert" disabled>Revert</button>
+        <button id="run">Compile & Run</button>
+        <button id="step-run">Compile & Run Step-by-Step</button>
+        <button id="next-step" class="hide">Next Step</button>
+        <button id="stop" class="hide">Stop</button>
+    </section>
+
+    <section class="content">
+        <label for="code" hidden>X0 Source Code</label>
+        <textarea id="code"></textarea>
+        <label for="info" hidden>Information</label>
+        <textarea id="info" readonly></textarea>
+        <label for="input" hidden>Inputs</label>
+        <textarea id="input"></textarea>
+        <div id="instr"></div>
+        <div id="stack"></div>
+    </section>
+
+</body>
+
+<script>
+    require('./renderer');
+</script>
+</html>

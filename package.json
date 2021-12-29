@@ -1,0 +1,20 @@
+{
+  "name": "x0-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.5"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "fix-path": "^3.0.0"
+  }
+}
