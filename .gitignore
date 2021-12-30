@@ -3,3 +3,5 @@
 package-lock.json
 node_modules
 app/addon/build
+x0-fe-darwin-arm64
+*.txt

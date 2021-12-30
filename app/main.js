@@ -113,9 +113,9 @@ const execCompile = exports.execCompile = (targetWindow, filePath, input, step_m
         const matches = data.match(/#p#\d+\n/);
         if (matches) {
             targetWindow.webContents.send('p', parseInt(matches.at(-1).split('#').at(-1)));
+            const stack = fs.readFileSync(fstack).toString();
+            targetWindow.webContents.send('stack', stack);
         }
-        const stack = fs.readFileSync(fstack).toString();
-        targetWindow.webContents.send('stack', stack);
     });
     proc.stderr.on('data', (data) => {
         console.log(data);
